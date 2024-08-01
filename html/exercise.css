@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+body{ background-color: #eeeeee; }
+
+h2 { margin-top: 30px; } 
+h3 { margin-top: 10px; }
+
+.exerciseConteiner {
+	width: 450px;
+	position: absolute;
+	left: calc(50% - 250px);
+	font-size: 14px;
+	font-family: sans-serif;
+	border: 3px solid #bce8f1;
+	border-radius: 15px;
+	background-color: #d9edf7;
+	padding: 0px 5px 70px 5px;
+	margin-top: 20px;
+} 
+
+.exerciseConteiner xmp{ 
+	font-weight: bold; 
+	font-size: 14px; 
+	font-family: sans-serif; 
+}
+
+@media(max-width: 500px){
+	body { overflow: auto; }
+	.exerciseConteiner {
+		position: absolute;
+		width: 100%;
+		left: 5px;
+	}
+}
+
+input[type="text"] { 
+	display: inline-block;
+	width:  100px;
+	padding: 3px;
+}
+
+input[type="submit"] { 
+	position: absolute;
+	left: calc(50% - 50px);
+}
+
+label { padding: 3px; }

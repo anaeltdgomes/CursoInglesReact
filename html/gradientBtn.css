@@ -1,0 +1,31 @@
+@charset "UTF-8";
+#btnGradient {
+	padding: 1em 2em;
+	background-color: #161a20;
+	border: none;
+	color: #f0f0f0;
+	border-radius: 1000px;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	bottom: 50px;
+	right: calc(50% - 64px);
+}
+
+#btnGradient::after{
+	content: '';
+	position: absolute;
+	height: 107%;
+	width: 102%;
+	border-radius: 1000px;
+	background-image: linear-gradient(to bottom right, #008cff, #e100ff);
+	z-index: -1;
+}
+
+#btnGradient:hover{
+	z-index: 0;
+	box-shadow: 40px 0 100px #008cff85, -40px 0 100px #e100ffbb;
+}
+
+

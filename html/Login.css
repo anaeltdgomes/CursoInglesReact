@@ -1,0 +1,104 @@
+body { 
+	background-color: #f4f4f4; 
+}
+
+#mainBox {
+	position: relative;
+	width: 80%;
+	height: 450px;
+	border: 15px solid #1e2772;
+	border-radius: 20px;
+	background-color: white;
+	margin: auto;
+	margin-top: 100px;
+	padding-left: 10%;
+	padding-right: 20px;	
+	overflow: auto;
+	-webkit-box-shadow: inset -500px 0px 25px -14px rgba(2241,2243,246,0.8);
+	-moz-box-shadow: inset -500px 0px 25px -14px rgba(242,243,246,0.8);
+	box-shadow: inset -500px 0px 25px -14px rgba(242,243,246,0.8);
+}
+
+#loginContainer, #registerContainer { 
+	position: relative;
+	width: 300px;
+	margin-top: 5%;
+	float: left;
+    z-index: 1;
+}
+
+#imgRight {
+	position: absolute;
+	width: 400px;
+	height: 400px;
+    float: right;
+   	margin-top: 20px;
+    z-index: 2;
+}
+
+#registerContainer { display: none; }
+
+label { 
+	display: inline-block;
+	width: 110px;
+	font-weight: bold;
+	padding: 8px;
+	margin-bottom: 5px;
+}
+
+.name, .email, .pass, .passCreate, .passRedo { 
+	display: inline-block;
+	width: 140px;
+	padding: 8px;
+	margin-bottom: 5px;
+}
+
+p { 
+	opacity: 0.5;
+	text-align: center;
+}
+
+#linkRegister { 
+	position: absolute;
+	left: calc(50% - 38px);
+}
+
+
+#submitLogin, #submitRegister {
+	position: relative;
+	left: calc(50% - 100px);
+	display: block;
+	height: 25px;
+	width: 200px;
+	font-size: 16px;
+	border: 1px solid orange;
+	color: orange;
+	background-color: white;
+}
+@media(min-width: 1000px){
+	#mainBox { 	
+		width: 700px;
+	}
+}
+@media(max-width: 800px){
+	#mainBox { 	
+		-webkit-box-shadow: inset -300px 0px 25px -14px rgba(242,243,246,0.8);
+		-moz-box-shadow: inset -300px 0px 25px -14px rgba(242,243,246,0.8);
+		box-shadow: inset -300px 0px 25px -14px rgba(242,243,246,0.8); 
+		}
+	#imgRight{ display: none; }	
+}
+@media(max-width: 600px){
+	#mainBox { 	
+		-webkit-box-shadow: inset -150px 0px 25px -14px rgba(242,243,246,0.8);
+		-moz-box-shadow: inset -150px 0px 25px -14px rgba(242,243,246,0.8);
+		box-shadow: inset -150px 0px 25px -14px rgba(242,243,246,0.8);
+		}
+}
+@media(max-width: 400px){
+	#mainBox { 	
+		-webkit-box-shadow: inset -100px 0px 25px -14px rgba(242,243,246,0.8);
+		-moz-box-shadow: inset -100px 0px 25px -14px rgba(242,243,246,0.8);
+		box-shadow: inset -100px 0px 25px -14px rgba(242,243,246,0.8);
+		}
+} 
